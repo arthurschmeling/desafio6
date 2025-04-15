@@ -1,0 +1,28 @@
+package javaapplication90;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+
+public class JavaApplication90 {
+
+  
+    public static void main(String[] args) {
+      Scanner ler= new Scanner (System.in);
+      DecimalFormat decimal=new DecimalFormat("0.00");
+      //variaveis//
+      int numero,soma;
+      //dados//
+      numero=1;
+      soma=0;
+      //processamneto//
+      while (numero<=20){
+          if (numero % 2 == 0){
+              soma+=numero;
+          }
+          numero++;
+      }
+        System.out.println("a soma dos numeros: "+soma);
+    }
+    
+}
