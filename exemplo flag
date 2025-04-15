@@ -1,0 +1,32 @@
+public class JavaApplication89 {
+
+    
+    public static void main(String[] args) {
+   Scanner ler= new Scanner (System.in);
+   DecimalFormat decimal= new DecimalFormat("0.00");
+   //variaveis//
+   int c, n, nSorte;
+   boolean achou;
+   //dados//
+   c= 1;
+   achou= false; //flag
+   while (c<=3 && !achou){
+       nSorte= 1+ (int)Math.random()*10;
+       System.out.println("escreva o seu numero da sorte");
+       n=ler.nextInt();
+       if (n==nSorte){
+           System.out.println("ta certo cabeça de pica!!!!!!");
+           achou=true;           
+       }else{
+           System.out.println("errou idiota kkkkkkk");
+           c++;
+           if (c>3){
+               System.out.println("perdeu otario");
+           }
+       }
+       
+   }
+    
+    }
+    
+}
