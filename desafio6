@@ -1,0 +1,24 @@
+package javaapplication87;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+
+public class JavaApplication87 {
+
+  
+    public static void main(String[] args) {
+     Scanner ler=new Scanner (System.in);
+     DecimalFormat decimnal= new DecimalFormat("0.00");
+     //variaveis//
+     int numero;
+     //dados//
+     numero= 100;
+     //processo//
+     while (numero >=-100){
+         System.out.println("numeros: "+numero);
+         numero--;
+     }
+    }
+    
+}
