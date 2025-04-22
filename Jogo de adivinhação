@@ -1,0 +1,33 @@
+package javaapplication99;
+
+import java.util.Scanner;
+
+public class JavaApplication99 {
+
+    public static void main(String[] args) {
+       Scanner ler= new Scanner(System.in);
+
+        // Gera um número aleatório entre 1 e 100
+        int numeroSorte = (int) (Math.random() * 100) + 1;
+        int palpite;
+        
+        System.out.println("Bem-vindo ao jogo de adivinhação!");
+        System.out.println("Tente adivinhar o número entre 1 e 100.");
+
+        do {
+            System.out.print("Digite seu palpite: ");
+            palpite = ler.nextInt();
+        
+            if (palpite < numeroSorte) {
+                System.out.println("Muito baixo! Tente novamente.");
+            } else if (palpite > numeroSorte) {
+                System.out.println("Muito alto! Tente novamente.");
+            } else {
+                System.out.println("Parabéns! Você acertou o número!");
+            }
+
+        } while (palpite != numeroSorte);
+
+  
+    }
+}
