@@ -1,0 +1,33 @@
+package javaapplication100;
+
+import java.util.Scanner;
+
+
+public class JavaApplication100 {
+
+   
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+
+        // Entrada do número da tabuada
+        System.out.print("Digite o número para a tabuada: ");
+        int numero = scanner.nextInt();
+
+        // Entrada do início do intervalo
+        System.out.print("Digite o início do intervalo: ");
+        int inicio = scanner.nextInt();
+
+        // Entrada do fim do intervalo
+        System.out.print("Digite o fim do intervalo: ");
+        int fim = scanner.nextInt();
+
+        // Exibindo a tabuada com for
+        System.out.println("\nTabuada do " + numero + " de " + inicio + " até " + fim + ":");
+        for (int i = inicio; i <= fim; i++) {
+            System.out.println(numero + " x " + i + " = " + (numero * i));
+        }
+
+        
+    }
+}
